@@ -9,7 +9,7 @@ namespace Entities_POJO
     public class Usuario : BaseEntity
     {
         public string Id { get; set;}
-        public string Name { get; set; }
+        public string Nombre { get; set; }
 
         public Usuario() { }
         public Usuario(string[] infoArray)
@@ -17,7 +17,7 @@ namespace Entities_POJO
             if(infoArray!=null && infoArray.Length >= 2)
             {
                 Id = infoArray[0];
-                Name = infoArray[1];
+                Nombre = infoArray[1];
             }
             else
             {
