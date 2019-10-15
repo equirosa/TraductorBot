@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crud\CrudFactory.cs" />
+    <Compile Include="Crud\TraduccionCrudFactory.cs" />
+    <Compile Include="Crud\PalabraEspannolCrudFactory.cs" />
     <Compile Include="Crud\UsuarioCrudFactory.cs" />
     <Compile Include="Dao\SqlDao.cs" />
     <Compile Include="Dao\SqlOperation.cs" />
