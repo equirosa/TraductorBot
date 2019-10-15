@@ -42,11 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crud\CrudFactory.cs" />
+    <Compile Include="Dao\SqlDao.cs" />
+    <Compile Include="Dao\SqlOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dao\" />
     <Folder Include="Mapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities-POJO\Entities-POJO.csproj">
+      <Project>{007EA88F-4119-4586-809D-379769ED1026}</Project>
+      <Name>Entities-POJO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
