@@ -7,8 +7,8 @@ namespace DataAcess.Mapper
     public interface ISqlStaments
     {
         SqlOperation GetCreateStatement(BaseEntity entity);
-        SqlOperation GetRetriveStatement(BaseEntity entity);
-        SqlOperation GetRetriveAllStatement();
+        SqlOperation GetRetrieveStatement(BaseEntity entity);
+        SqlOperation GetRetrieveAllStatement();
         SqlOperation GetUpdateStatement(BaseEntity entity);
         SqlOperation GetDeleteStatement(BaseEntity entity);
     }
