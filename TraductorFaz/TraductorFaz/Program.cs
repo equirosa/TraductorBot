@@ -9,8 +9,11 @@ namespace TraductorFaz
 {
     class Program
     {
+        private static Usuario currentUser = null;
         private static UsuarioManager usrMgr;
         private static LenguajeManager lengMgr;
+        private static TraduccionManager tradMgr;
+        private static PalabraEspannolManager espMgr;
         static void Main(string[] args)
         {
             Console.WriteLine("Hola!");
@@ -18,9 +21,13 @@ namespace TraductorFaz
             {
                 if (checkUsuariosExist())
                 {
-
-                    MostrarMenu();
-                    ProcesarOpcion(Console.ReadLine().ToLower().ToCharArray()[0]);
+                    if (userLoggedIn())
+                    {
+                        MostrarMenu();
+                        ProcesarOpcion(Console.ReadLine().ToLower().ToCharArray()[0]);
+                    }
+                    else
+                        login();
                 }
                 else
                 {
@@ -29,6 +36,28 @@ namespace TraductorFaz
                 }
             } while (Continuar());
             Console.WriteLine("Adios!");
+        }
+
+        private static void login()
+        {
+            Console.WriteLine("Inicie Sesion\n" +
+                "Ingrese su cedula.");
+            string cedula = Console.ReadLine();
+            Usuario temp = usrMgr.RetrieveById(new Usuario(cedula));
+            if (temp.Nombre != null)
+            {
+                currentUser = temp;
+                Console.WriteLine("Session iniciada.");
+            }
+            else
+            {
+                Console.WriteLine("Ese usuario no se encuentra registrado.");
+            }
+        }
+
+        private static bool userLoggedIn()
+        {
+            return currentUser != null;
         }
 
         private static void registrarUsuario()
@@ -64,6 +93,66 @@ namespace TraductorFaz
             }
         }
 
+        private static void Traducir()
+        {
+            Lenguaje lenguaje;
+            do {
+                 lenguaje = SeleccionarLenguaje();
+            } while (lenguaje == null);
+            Console.WriteLine("Por favor, introduzca la frase que desea traducir.");
+            string frase = Console.ReadLine();
+            string[] array = frase.Split(' ');
+            string[] resultado = new string[array.Length];
+            foreach(string palabra in array){
+                if(checkTranslationAvailable(palabra, lenguaje))
+                {
+                    Console.WriteLine(tradMgr.RetrieveById)
+                }
+
+            }
+        }
+
+        private static bool checkTranslationAvailable(string palabra, Lenguaje lenguaje)
+        {
+            
+        }
+
+        private static Lenguaje SeleccionarLenguaje()
+        {
+            string seleccion = null;
+                ListarLenguajes();
+                Console.WriteLine("Escriba el nombre de uno de los lenguajes listados, o ingrese 0 si desea registrar uno.");
+                seleccion = Console.ReadLine();
+                if (seleccion.Equals("0"))
+                {
+                    RegistrarIdioma();
+                    return null;
+                }
+                else
+                {
+                    if (checkLenguajeExists(seleccion))
+                    {
+                        return new Lenguaje(seleccion);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ese lenguaje no se encuentra registrado.");
+                        return null;
+                }
+            }
+        }
+
+        private static bool checkLenguajeExists(string seleccion)
+        {
+            Lenguaje[] lenguajes = ObtenerLenguajes();
+            foreach(Lenguaje data in lenguajes)
+            {
+                if (data.Equals(seleccion))
+                    return true;
+            }
+            return false;
+        }
+
         private static void RegistrarIdioma()
         {
             Console.WriteLine("Ingrese el nombre del idioma que desea registrar");
@@ -86,11 +175,16 @@ namespace TraductorFaz
         private static void ListarLenguajes()
         {
             int i = 1;
-            Lenguaje[] array = lengMgr.RetrieveAll().ToArray();
+            Lenguaje[] array = ObtenerLenguajes(); 
             foreach(Lenguaje data in array)
             {
                 Console.WriteLine(i + data.ToString());
             }
+        }
+
+        private static Lenguaje[] ObtenerLenguajes()
+        {
+            return lengMgr.RetrieveAll().ToArray();
         }
     }
 }

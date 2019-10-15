@@ -8,6 +8,8 @@ namespace Entities_POJO
 {
     public class Usuario : BaseEntity
     {
+        private string cedula;
+
         public string Id { get; set;}
         public string Nombre { get; set; }
 
@@ -21,8 +23,13 @@ namespace Entities_POJO
             }
             else
             {
-                throw new Exception("Todos los valores son requeridos. [Id,Name]");
+                throw new Exception("Todos los valores son requeridos. [Id,Nombre]");
             }
+        }
+
+        public Usuario(string cedula)
+        {
+            this.Id = cedula;
         }
     }
 }
