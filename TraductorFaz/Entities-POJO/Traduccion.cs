@@ -8,9 +8,9 @@ namespace Entities_POJO
 {
     public class Traduccion : BaseEntity
     {
-        private string Original { get; set; }
-        private Lenguaje Objetivo { get; set; }
-        private string Resultado { get; set; }
+        public string Original { get; set; }
+        public Lenguaje Objetivo { get; set; }
+        public string Resultado { get; set; }
 
         public Traduccion() { }
         public Traduccion(string spanish, Lenguaje lenguaje, string resultado)

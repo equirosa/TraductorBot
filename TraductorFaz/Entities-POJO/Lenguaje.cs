@@ -4,8 +4,8 @@ namespace Entities_POJO
 {
     public class Lenguaje : BaseEntity
     {
-        private string Id { get; set; }
-        private string Name { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
 
         public Lenguaje() { }
         public Lenguaje(string[] infoArray)

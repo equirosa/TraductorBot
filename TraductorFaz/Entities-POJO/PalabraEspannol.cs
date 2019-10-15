@@ -4,8 +4,8 @@ namespace Entities_POJO
 {
     class PalabraEspannol
     {
-        private string Palabra { get; set; }
-        private int Popularidad { get; set; }
+        public string Palabra { get; set; }
+        public int Popularidad { get; set; }
 
         public PalabraEspannol() { }
         public PalabraEspannol(string[] infoArray)
