@@ -4,20 +4,18 @@ namespace Entities_POJO
 {
     public class Lenguaje : BaseEntity
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
+        public string Nombre { get; set; }
 
         public Lenguaje() { }
-        public Lenguaje(string[] infoArray)
+        public Lenguaje(string nombre)
         {
-            if (infoArray != null && infoArray.Length >= 2)
+            if (nombre != null)
             {
-                Id = infoArray[0];
-                Name = infoArray[1];
+                Nombre = nombre;
             }
             else
             {
-                throw new Exception("Todos los valores son requeridos. [Id,Name]");
+                throw new Exception("El nombre del lenguaje no puede ser nulo");
             }
         }
     }
