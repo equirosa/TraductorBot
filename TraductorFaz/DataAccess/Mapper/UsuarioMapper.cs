@@ -35,7 +35,6 @@ namespace DataAccess.Mapper
             var u = (Usuario)entity;
             operation.AddVarcharParam(DB_COL_ID, u.Id);
             operation.AddVarcharParam(DB_COL_NOMBRE, u.Nombre);
-
             return operation;
         }
 
