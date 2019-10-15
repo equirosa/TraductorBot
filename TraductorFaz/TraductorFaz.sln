@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_DataAccess", "2_DataAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Exceptions", "3_Exceptions", "{018BFF28-BD53-4456-824A-329FF9B544D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{007EA88F-4119-4586-809D-379769ED1026} = {4E67A62B-D3C2-463D-9EBE-5282CF1F76A4}
 		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F} = {D90D07F5-43FF-4589-ACCD-8E488AB88A8C}
+		{FA2D3FC8-7859-493B-A6BE-87770B6AB19D} = {018BFF28-BD53-4456-824A-329FF9B544D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A456EA0-36AA-44C3-AA4F-F9D056A13AD5}

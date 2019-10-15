@@ -45,9 +45,25 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LenguajeManager.cs" />
+    <Compile Include="UsuarioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities-POJO\Entities-POJO.csproj">
+      <Project>{007EA88F-4119-4586-809D-379769ED1026}</Project>
+      <Name>Entities-POJO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{FA2D3FC8-7859-493B-A6BE-87770B6AB19D}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

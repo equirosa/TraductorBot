@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationMessage.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Lenguaje.cs" />
     <Compile Include="ObjectDumper.cs" />
