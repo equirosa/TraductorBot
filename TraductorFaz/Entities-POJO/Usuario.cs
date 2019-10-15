@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entities_POJO
 {
-    public class User : BaseEntity
+    public class Usuario : BaseEntity
     {
         private string Id { get; set;}
         private string Name { get; set; }
 
-        public User() { }
-        public User(string[] infoArray)
+        public Usuario() { }
+        public Usuario(string[] infoArray)
         {
             if(infoArray!=null && infoArray.Length >= 2)
             {

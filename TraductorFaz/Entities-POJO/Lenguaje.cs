@@ -2,13 +2,13 @@
 
 namespace Entities_POJO
 {
-    public class Language : BaseEntity
+    public class Lenguaje : BaseEntity
     {
         private string Id { get; set; }
         private string Name { get; set; }
 
-        public Language() { }
-        public Language(string[] infoArray)
+        public Lenguaje() { }
+        public Lenguaje(string[] infoArray)
         {
             if (infoArray != null && infoArray.Length >= 2)
             {
