@@ -2,7 +2,7 @@
 
 namespace Entities_POJO
 {
-    public class PalabraEspannol
+    public class PalabraEspannol :BaseEntity
     {
         public string Palabra { get; set; }
         public int Popularidad { get; set; }
