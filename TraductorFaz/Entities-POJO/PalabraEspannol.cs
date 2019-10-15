@@ -2,7 +2,7 @@
 
 namespace Entities_POJO
 {
-    class PalabraEspannol
+    public class PalabraEspannol
     {
         public string Palabra { get; set; }
         public int Popularidad { get; set; }
