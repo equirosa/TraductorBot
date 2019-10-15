@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraductorFaz", "TraductorFaz\TraductorFaz.csproj", "{73002895-B210-4D9A-B9A4-EDF40549814A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Entities", "1_Entities", "{4E67A62B-D3C2-463D-9EBE-5282CF1F76A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities-POJO", "Entities-POJO\Entities-POJO.csproj", "{007EA88F-4119-4586-809D-379769ED1026}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73002895-B210-4D9A-B9A4-EDF40549814A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73002895-B210-4D9A-B9A4-EDF40549814A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73002895-B210-4D9A-B9A4-EDF40549814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73002895-B210-4D9A-B9A4-EDF40549814A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007EA88F-4119-4586-809D-379769ED1026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007EA88F-4119-4586-809D-379769ED1026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007EA88F-4119-4586-809D-379769ED1026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007EA88F-4119-4586-809D-379769ED1026}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{007EA88F-4119-4586-809D-379769ED1026} = {4E67A62B-D3C2-463D-9EBE-5282CF1F76A4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A456EA0-36AA-44C3-AA4F-F9D056A13AD5}
+	EndGlobalSection
+EndGlobal
