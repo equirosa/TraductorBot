@@ -10,8 +10,24 @@ namespace TraductorFaz
     {
         static void Main(string[] args)
         {
+            Saludar();
+            MostrarMenu();
+        }
+
+        private static void Saludar()
+        {
             Console.WriteLine("Hola!");
-            Console.ReadKey();
+        }
+
+        private static void MostrarMenu()
+        {
+            Console.WriteLine("Sleccione un lenguaje.");
+            ListarLenguajes();
+        }
+
+        private static void ListarLenguajes()
+        {
+
         }
     }
 }
