@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Entities", "1_Entities", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities-POJO", "Entities-POJO\Entities-POJO.csproj", "{007EA88F-4119-4586-809D-379769ED1026}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_DataAccess", "2_DataAccess", "{D90D07F5-43FF-4589-ACCD-8E488AB88A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{007EA88F-4119-4586-809D-379769ED1026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{007EA88F-4119-4586-809D-379769ED1026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{007EA88F-4119-4586-809D-379769ED1026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{007EA88F-4119-4586-809D-379769ED1026} = {4E67A62B-D3C2-463D-9EBE-5282CF1F76A4}
+		{60B4CFEB-4EF2-49DB-96D2-175A6C49370F} = {D90D07F5-43FF-4589-ACCD-8E488AB88A8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A456EA0-36AA-44C3-AA4F-F9D056A13AD5}
