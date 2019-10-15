@@ -42,13 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crud\CrudFactory.cs" />
+    <Compile Include="Crud\UsuarioCrudFactory.cs" />
     <Compile Include="Dao\SqlDao.cs" />
     <Compile Include="Dao\SqlOperation.cs" />
+    <Compile Include="Mapper\EntityMapper.cs" />
+    <Compile Include="Mapper\IObjectMapper.cs" />
+    <Compile Include="Mapper\ISqlStaments.cs" />
+    <Compile Include="Mapper\UsuarioMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mapper\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Entities-POJO\Entities-POJO.csproj">
       <Project>{007EA88F-4119-4586-809D-379769ED1026}</Project>
